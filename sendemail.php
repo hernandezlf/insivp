@@ -1,7 +1,7 @@
 <?php
 
-$EmailFrom="noreply@mydomain.com";
-$EmailTo="myemail@mydomain.com";
+$EmailFrom="noreply@insivp.com";
+$EmailTo="cotizaciones@insivp.com";
 //$Subject="Email from the Contact Form";
 $Name=Trim(stripslashes($_POST['name']));
 $Email=Trim(stripslashes($_POST['email']));
