@@ -1,6 +1,5 @@
 <?php
 
-$EmailFrom="noreply@insivp.com";
 $EmailTo="cotizaciones@insivp.com";
 //$Subject="Email from the Contact Form";
 $Name=Trim(stripslashes($_POST['name']));
@@ -18,20 +17,16 @@ if ($Name == "") $ValidationOk=false;
 		
 	// preparing the body of the email 
 	$Body="";
-	$Body.="Name: ";
+	$Body.="Nombre: ";
 	$Body.=$Name;
 	$Body.="\n";
 
-	$Body.="Email: ";
-	$Body.=$Email;
-	$Body.="\n";
-
 	$Body.="Message: ";
-	$Body.=$Message;
+	$Body.=wordwrap($Message, 70, "\r\n");
 	$Body.="\n";
 
 	//sending the email now
-	$success=mail($EmailTo, $Subject, $Body,"From: <$EmailFrom>");
+	$success=mail($EmailTo, $Subject, $Body,"From: <$Email>");
 
 	//redirect after mail send 
 	if ($success) {
