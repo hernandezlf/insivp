@@ -182,7 +182,7 @@ ul.nostyle i {
 
 
   #main-menu.navbar-default .navbar-nav > li.active > a,
-  #main-menu.navbar-default .navbar-nav > li.open > a,
+  #main-menu.navbar-default .navbar-nav > li.open > a,*/
   #main-menu.navbar-default .navbar-nav > li:hover > a {
     background: transparent;
   }
@@ -233,7 +233,7 @@ ul.nostyle i {
   background-size: cover;
 }
 #main-slider .slider-inner {
-  position: absolute;
+  /*position: absolute;*/
   top: 0;
   left: 0;
   width: 100%;
